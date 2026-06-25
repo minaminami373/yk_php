@@ -1,7 +1,7 @@
 /* package */
 const { src, dest, watch, series, parallel } = require("gulp");
 // const gulp = require("gulp");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
 const sassGlob = require("gulp-sass-glob");
